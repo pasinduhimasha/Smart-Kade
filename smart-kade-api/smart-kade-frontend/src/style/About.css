@@ -1,0 +1,220 @@
+/* ----------------- About Page Styles ----------------- */
+
+/* Main Accent Color */
+:root {
+  --primary-color: #facc15;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 55vh;
+  background: url("/images/about-smartkade-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.about-hero h1 .highlight {
+  color: var(--primary-color);
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* About Info Section */
+.about-info {
+  padding: 70px 20px;
+  background: #f9f9f9;
+}
+
+.about-info .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-info .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 35px;
+}
+
+.about-info .about-text {
+  flex: 1;
+}
+
+.about-info .about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.about-info .about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-info .about-image {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.about-info .about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.about-info .about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Mission & Vision Cards */
+.about-mission {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.about-mission .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.about-mission .card {
+  background: #fdf3d4;
+  border-left: 6px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 25px 20px;
+  max-width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.about-mission .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-mission .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.about-mission .card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------- Animations ---------------- */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeLeft 1s forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeRight 1s forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s forwards;
+}
+
+.fade-in.delay-1,
+.fade-left.delay-1,
+.fade-right.delay-1,
+.fade-up.delay-1 {
+  animation-delay: 0.4s;
+}
+.fade-in.delay-2,
+.fade-left.delay-2,
+.fade-right.delay-2,
+.fade-up.delay-2 {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 992px) {
+  .about-info .row {
+    flex-direction: column-reverse;
+  }
+  .about-info .about-text,
+  .about-info .about-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  .about-hero p {
+    font-size: 1rem;
+  }
+  .about-mission .card {
+    max-width: 90%;
+  }
+}
