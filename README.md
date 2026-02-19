@@ -10,8 +10,6 @@
 - [Screenshots](#screenshots)
 - [Demo Credentials](#demo-credentials)
 - [Setup Instructions](#setup-instructions)
-- [Author](#author)
-- [License](#license)
 
 ---
 
