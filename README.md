@@ -1,4 +1,4 @@
-# Smart Kade 🍽️
+# Smart Kade 
 
 **Smart Kade** is a modern online food ordering web application built with **React.js (Vite)**, **Node.js**, and **MongoDB (local)**. Users can browse and search the menu, filter by categories, view today’s offers, place orders, and download detailed bills. Admins can securely manage menu items by adding, updating, or deleting dishes.
 
@@ -95,3 +95,13 @@ User frontend: http://localhost:5173
  (Vite default port)
 
 Admin panel: login with admin credentials
+
+
+
+## Author
+**Pasindu Himasha**
+
+---
+
+## License
+This project is created for educational and portfolio purposes. You are free to explore, learn from, and improve the system.
