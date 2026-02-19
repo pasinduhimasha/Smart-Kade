@@ -1,4 +1,4 @@
-# Smart Kade 
+# Smart Kade 🍽️
 
 **Smart Kade** is a modern online food ordering web application built with **React.js (Vite)**, **Node.js**, and **MongoDB (local)**. Users can browse and search the menu, filter by categories, view today’s offers, place orders, and download detailed bills. Admins can securely manage menu items by adding, updating, or deleting dishes.
 
@@ -10,6 +10,7 @@
 - [Screenshots](#screenshots)
 - [Demo Credentials](#demo-credentials)
 - [Setup Instructions](#setup-instructions)
+- [Author](#author)
 - [License](#license)
 
 ---
@@ -33,21 +34,20 @@
 ---
 
 ## Screenshots
-All screenshots are located in `smart-kade-api/screenshots/`:
 
-| Screenshot | Description |
-|------------|-------------|
-| `Home.jpg` | Home page |
-| `About.jpg` | About section |
-| `WhyChooseUs.jpg` | Why Choose Us section |
-| `AdminLogin.jpg` | Admin login page |
-| `login.jpg` | User login page |
-| `Register.jpg` | User registration page |
-| `Menu.jpg` | Menu page |
-| `manageitems.jpg` | Admin manage items page |
-| `Additeam.jpg` | Admin add item page |
-| `addoffer.jpg` | Admin add offer page |
-| `bill.jpg` | Example order bill |
+| Page | Screenshot |
+|------|-----------|
+| Home | ![Home](smart-kade-api/screenshots/Home.jpg) |
+| About | ![About](smart-kade-api/screenshots/About.jpg) |
+| Why Choose Us | ![WhyChooseUs](smart-kade-api/screenshots/WhyChooseUs.jpg) |
+| Admin Login | ![AdminLogin](smart-kade-api/screenshots/AdminLogin.jpg) |
+| User Login | ![Login](smart-kade-api/screenshots/login.jpg) |
+| Register | ![Register](smart-kade-api/screenshots/Register.jpg) |
+| Menu | ![Menu](smart-kade-api/screenshots/Menu.jpg) |
+| Manage Items | ![ManageItems](smart-kade-api/screenshots/manageitems.jpg) |
+| Add Item | ![AddItem](smart-kade-api/screenshots/Additeam.jpg) |
+| Add Offer | ![AddOffer](smart-kade-api/screenshots/addoffer.jpg) |
+| Bill | ![Bill](smart-kade-api/screenshots/bill.jpg) |
 
 ---
 
@@ -69,15 +69,10 @@ All screenshots are located in `smart-kade-api/screenshots/`:
 ```bash
 git clone https://github.com/pasinduhimasha/Smart-Kade.git
 cd smart_kade
-
-
-
 Backend Setup
 
 cd smart-kade-api
 npm install
-
-
 Make sure MongoDB is running locally
 
 Configure .env if needed
@@ -87,21 +82,14 @@ Frontend Setup
 cd smart-kade-frontend
 npm install
 npm run dev
-
-
 Access the application
 
 User frontend: http://localhost:5173
- (Vite default port)
 
 Admin panel: login with admin credentials
 
+Author
+Pasindu Himasha
 
-
-## Author
-**Pasindu Himasha**
-
----
-
-## License
+License
 This project is created for educational and portfolio purposes. You are free to explore, learn from, and improve the system.
