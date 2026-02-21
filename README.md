@@ -1,6 +1,10 @@
-# Smart Kade 
+# Smart Kade 🍽️
 
-**Smart Kade** is a modern online food ordering web application built with **React.js (Vite)**, **Node.js**, and **MongoDB (local)**. Users can browse and search the menu, filter by categories, view today’s offers, place orders, and download detailed bills. Admins can securely manage menu items by adding, updating, or deleting dishes.
+**Smart Kade** is a modern full-stack online food ordering web application built with **React.js (Vite)**, **Node.js**, **Express REST API**, and **MongoDB (local)**.
+
+Users can browse and search the menu, filter by categories, view today’s offers, place orders, and download detailed bills.  
+
+Admins can securely manage menu items and offers through protected API routes. The backend REST API was tested using **Postman**.
 
 ---
 
@@ -10,24 +14,49 @@
 - [Screenshots](#screenshots)
 - [Demo Credentials](#demo-credentials)
 - [Setup Instructions](#setup-instructions)
+- [Author](#author)
+- [License](#license)
 
 ---
 
 ## Features
+
 - Browse the full menu with category filters and search functionality
 - View today’s special offers
-- User accounts: place orders and download detailed bills
-- Admin panel: add, update, or delete menu items
+- User accounts with secure JWT authentication
+- Place orders and download detailed bills
+- Secure Admin Dashboard
+  - Add new menu items
+  - Update existing items
+  - Delete items
+  - Manage special offers
+- RESTful API architecture
 - Responsive design for desktop and mobile
 
 ---
 
 ## Tech Stack
-- **Frontend:** React.js (Vite)  
-- **Backend:** Node.js with Express  
-- **Database:** MongoDB (local)  
-- **Authentication:** JWT-based secure login  
-- **Styling:** CSS / Tailwind / React components  
+
+### Frontend
+- React.js (Vite)
+- React Router
+- CSS / Tailwind
+
+### Backend
+- Node.js
+- Express.js (RESTful API)
+
+### Database
+- MongoDB (Local)
+
+### Authentication
+- JSON Web Token (JWT)
+
+### API Testing
+- Postman
+
+### Version Control
+- Git & GitHub
 
 ---
 
@@ -51,43 +80,60 @@
 
 ## Demo Credentials
 
-### User
-- Email: `pasindu@gmail.com`  
+### 👤 User
+- Email: `pasindu@gmail.com`
 - Password: `123456`
 
-### Admin
-- Email: `admin@gmail.com`  
+### 🔑 Admin
+- Email: `admin@gmail.com`
 - Password: `123456`
 
 ---
 
 ## Setup Instructions
 
-1. **Clone the repository**
+### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/pasinduhimasha/Smart-Kade.git
-cd smart_kade
-Backend Setup
+cd Smart-Kade
+2️⃣ Start MongoDB (Database)
+
+Make sure MongoDB is installed. Then run:
+
+mongod
+
+This starts the local MongoDB server.
+
+3️⃣ Run Backend Server (Authentication & API)
+
+Open a new terminal:
 
 cd smart-kade-api
 npm install
-Make sure MongoDB is running locally
+nodemon server.js
 
-Configure .env if needed
+This runs the Express REST API server for authentication, items, offers, and orders.
 
-Frontend Setup
+Backend runs on:
+
+http://localhost:5000
+4️⃣ Run Frontend (React App)
+
+Open another new terminal:
 
 cd smart-kade-frontend
 npm install
 npm run dev
-Access the application
 
-User frontend: http://localhost:5173
+Frontend runs on:
 
-Admin panel: login with admin credentials
-
+http://localhost:5173
 Author
+
 Pasindu Himasha
 
 License
-This project is created for educational and portfolio purposes. You are free to explore, learn from, and improve the system.
+
+This project is created for educational and portfolio purposes.
+You are free to explore, learn from, and improve the system.
