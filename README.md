@@ -1,4 +1,4 @@
-# Smart Kade 🍽️
+# Smart Kade 
 
 **Smart Kade** is a modern full-stack online food ordering web application built with **React.js (Vite)**, **Node.js**, **Express REST API**, and **MongoDB (local)**.
 
@@ -80,11 +80,11 @@ Admins can securely manage menu items and offers through protected API routes. T
 
 ## Demo Credentials
 
-### 👤 User
+###  User
 - Email: `pasindu@gmail.com`
 - Password: `123456`
 
-### 🔑 Admin
+###  Admin
 - Email: `admin@gmail.com`
 - Password: `123456`
 
